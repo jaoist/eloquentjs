@@ -12,8 +12,7 @@ for (let number = 1; number <= 100; number++){
     if (number % 5 === 0){
         output += 'Buzz';
     }    
-    else {
-        output = number;
-    }
-    console.log(output)
+    console.log(output || number); //This is a short circuit OR. '' == false.
 }
+
+s
