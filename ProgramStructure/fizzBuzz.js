@@ -14,5 +14,3 @@ for (let number = 1; number <= 100; number++){
     }    
     console.log(output || number); //This is a short circuit OR. '' == false.
 }
-
-s
