@@ -6,9 +6,13 @@
 // jshint esversion: 6 
 
 function countBs(str) {
+  return countChar(str, 'B');
+}
+
+function countChar(str, char) {
   count = 0;
   for (i = 0; i < str.length; i++){
-    if (str[i].toLowerCase() == 'b'){
+    if (str[i] == char){
       count++;
     }
   }
@@ -16,3 +20,4 @@ function countBs(str) {
 }
 
 console.log(countBs("Baby birds bite butterflys"));
+console.log(countChar("Similar simians sound so sleepy", 's'));
