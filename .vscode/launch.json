@@ -4,11 +4,17 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch recursion.js",
+            "program": "${workspaceFolder}/Functions/recursion.js"
+        },
 
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch checkerboard.js",
             "program": "${workspaceFolder}/ProgramStructure/checkerboard.js"
         }
     ]
