@@ -7,6 +7,13 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch beanCounting.js",
+            "program": "${workspaceFolder}/Functions/beanCounting.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch recursion.js",
             "program": "${workspaceFolder}/Functions/recursion.js"
         },
