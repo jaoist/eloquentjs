@@ -6,7 +6,7 @@
  // jshint esversion: 6
 
 function range(start, end){
-    arr = [];
+    let arr = [];
     for (i = start; i <= end; i++) {
         arr.push(i);
     }
@@ -14,7 +14,7 @@ function range(start, end){
 }
 
 function sum(arr){
-    result = 0;
+    let result = 0;
     for (i = 0; i < arr.length; i++){
         result += arr[i];
     }
