@@ -6,13 +6,14 @@
 obj1 = {value: "test"}
 obj2 = {value: "test"}
 obj3 = {value1: 1, value2: 2}
+obj4 = {value: "x"}
 
 arr1 = [1,2,3]
 arr2 = [1,2,3]
 arr3 = [2,3,4]
 
 function deepEqual(a, b) {
-    if ((a !== null && typeof a == 'object') && 
+    if ((a !== null && typeof a == 'object') &&
         (b !== null && typeof b == 'object')) {
             //Compare length of property list
             if (Object.keys(a).length === Object.keys(b).length) {
@@ -35,3 +36,4 @@ console.log(deepEqual(arr1, arr2));
 console.log(deepEqual(arr1, arr3));
 console.log(deepEqual(1, null));
 console.log(deepEqual(null, null));
+console.log(deepEqual(obj1, obj4));
