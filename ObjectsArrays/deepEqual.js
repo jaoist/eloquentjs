@@ -3,6 +3,8 @@
  * objects with the same properties. 
  */
 
+ // jshint esversion: 6
+
 obj1 = {value: "test"};
 obj2 = {value: "test"};
 obj3 = {value1: 1, value2: 2};
@@ -18,6 +20,7 @@ function deepEqual(a, b) {
             //Compare length of property list
             if (Object.keys(a).length === Object.keys(b).length) {
                 for (let k of Object.keys(a)) {
+                    // Recurse on key values
                     return deepEqual(a[k], b[k]);
                 }
             }
