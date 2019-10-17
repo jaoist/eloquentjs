@@ -7,6 +7,13 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch everything.js",
+            "program": "${workspaceFolder}//HigherOrderFunctions/everything.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch ownLoop.js",
             "program": "${workspaceFolder}//HigherOrderFunctions/ownLoop.js"
         },
