@@ -1,6 +1,7 @@
 /**
  * Implementation of Array.every(), using a function that takes an array and a function,
  * one using a loop, the other using the some method.
+ * The someEvery
  */
 
  // jshint esversion: 6
@@ -14,8 +15,11 @@ function loopEvery(arr, fn) {
     return true;
 }
 
+// This was a tough one.
 function someEvery(arr, fn) {
-    return arr.some(fn);
+    //Every element can be tested individually by 
+    //a nested calling of fn() for each element.
+    return !arr.some(elem => !fn(elem));
 }
 
 //tests from author
